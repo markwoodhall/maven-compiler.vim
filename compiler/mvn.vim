@@ -16,11 +16,10 @@ CompilerSet makeprg=mvn
 " POM related messages
 CompilerSet errorformat=%E[ERROR]\ %#Non-parseable\ POM\ %f:\ %m\ %#\\@\ line\ %l\\,\ column\ %c%.%#,%Z,
 CompilerSet errorformat+=%+E[ERROR]\ %#Malformed\ POM\ %f:%m\ %#\\@\ %.%#\\,\ line\ %l\\,\ column\ %c%.%#,%Z,
+"
 " Java related build messages
-CompilerSet errorformat+=%+I[INFO]\ BUILD\ %m,%Z
+CompilerSet errorformat+=%W[WARNING]\ %f:\ \(%l\\,\ %c\\)\ %m,%Z
 CompilerSet errorformat+=%E[ERROR]\ %f:[%l\\,%c]\ %m,%Z
-CompilerSet errorformat+=%A[%t%[A-Z]%#]\ %f:[%l\\,%c]\ %m,%Z
-CompilerSet errorformat+=%A%f:[%l\\,%c]\ %m,%Z
 
 " jUnit related build messages
 CompilerSet errorformat+=%+E\ \ %#test%m,%Z
